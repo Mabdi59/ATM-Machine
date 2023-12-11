@@ -10,7 +10,10 @@ public class BankDatabase {
     public BankDatabase() {
         accounts.put("123456789", new Account("123456789", 1000.00));
         accounts.put("987654321", new Account("987654321", 500.00));
+    }
 
+    public Account getAccount(String accountNumber) {
+        return accounts.get(accountNumber);
     }
 
     public double getAccountBalance(String accountNumber) {

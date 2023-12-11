@@ -1,6 +1,5 @@
 package com.MohamedAbdi;
 
-
 import com.MohamedAbdi.bank.BankDatabase;
 import com.MohamedAbdi.bank.BalanceInquiry;
 import com.MohamedAbdi.bank.Deposit;

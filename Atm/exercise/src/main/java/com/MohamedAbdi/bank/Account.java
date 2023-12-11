@@ -3,10 +3,12 @@ package com.MohamedAbdi.bank;
 public class Account {
     private String accountNumber;
     private double balance;
+    private String encryptedPin;
 
     public Account(String accountNumber, double initialBalance) {
         this.accountNumber = accountNumber;
         this.balance = initialBalance;
+        this.encryptedPin = encryptedPin;
     }
 
     public String getAccountNumber() {
@@ -15,6 +17,10 @@ public class Account {
 
     public double getBalance() {
         return balance;
+    }
+
+    public String getEncryptedPin() {
+        return encryptedPin;
     }
 
     public void deposit(double amount) {
@@ -38,5 +44,4 @@ public class Account {
         balance -= amount;
         return true;
     }
-
 }
