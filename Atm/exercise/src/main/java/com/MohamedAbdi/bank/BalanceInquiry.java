@@ -5,6 +5,7 @@ public class BalanceInquiry extends Transaction {
     public BalanceInquiry(String accountNumber, BankDatabase bankDatabase) {
         super(accountNumber, bankDatabase);
     }
+
     @Override
     public void execute() {
         double balance = getBankDatabase().getAccountBalance(getAccountNumber());

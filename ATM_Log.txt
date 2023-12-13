@@ -1,0 +1,31 @@
+12/12/2023 23:06:07 - ATM Machine started.
+12/12/2023 23:07:05 - ATM Machine started.
+12/12/2023 23:20:21 - ATM Machine started.
+12/12/2023 23:22:37 - ATM Machine started.
+12/12/2023 23:23:13 - ATM Machine started.
+12/12/2023 23:23:19 - ATM Machine shut down.
+12/12/2023 23:23:32 - ATM Machine started.
+12/12/2023 23:23:34 - ATM Machine shut down.
+12/12/2023 23:23:58 - ATM Machine started.
+12/12/2023 23:24:01 - ATM Machine shut down.
+12/12/2023 23:25:19 - ATM Machine started.
+12/12/2023 23:25:26 - ATM Machine shut down.
+12/12/2023 23:32:51 - ATM Machine started.
+12/12/2023 23:33:00 - ATM Machine shut down.
+12/12/2023 23:36:16 - ATM Machine started.
+12/12/2023 23:36:21 - ATM Machine shut down.
+12/12/2023 23:42:05 - ATM Machine started.
+12/12/2023 23:45:49 - ATM Machine started.
+12/12/2023 23:46:02 - ATM Machine shut down.
+12/12/2023 23:46:09 - ATM Machine started.
+12/12/2023 23:46:12 - ATM Machine shut down.
+12/12/2023 23:49:31 - ATM Machine started.
+12/12/2023 23:49:35 - ATM Machine shut down.
+12/12/2023 23:59:55 - ATM Machine started.
+12/13/2023 00:00:03 - ATM Machine shut down.
+12/13/2023 00:11:03 - ATM Machine started.
+12/13/2023 00:19:57 - ATM Machine started.
+12/13/2023 00:21:49 - ATM Machine started.
+12/13/2023 00:22:22 - ATM Machine started.
+12/13/2023 00:35:06 - ATM Machine started.
+12/13/2023 00:40:38 - ATM Machine shut down.

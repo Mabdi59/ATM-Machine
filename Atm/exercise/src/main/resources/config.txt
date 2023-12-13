@@ -1,0 +1,4 @@
+# ATM Configuration Settings
+transactionLimit=500
+fee=1.50
+atmId=ATM123

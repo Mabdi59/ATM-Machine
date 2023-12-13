@@ -5,7 +5,7 @@ public class Account {
     private double balance;
     private String encryptedPin;
 
-    public Account(String accountNumber, double initialBalance) {
+    public Account(String accountNumber, double initialBalance, String encryptedPin) {
         this.accountNumber = accountNumber;
         this.balance = initialBalance;
         this.encryptedPin = encryptedPin;

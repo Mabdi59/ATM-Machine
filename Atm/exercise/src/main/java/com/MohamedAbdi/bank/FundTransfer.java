@@ -12,7 +12,7 @@ public class FundTransfer extends Transaction {
     }
 
     public void execute() {
-        // Logic to transfer funds between accounts
+
         getBankDatabase().transferFunds(getAccountNumber(), targetAccountNumber, amount);
     }
 }

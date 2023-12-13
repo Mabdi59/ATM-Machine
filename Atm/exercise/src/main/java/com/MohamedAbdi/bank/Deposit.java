@@ -10,7 +10,7 @@ public class Deposit extends Transaction {
     }
 
     public void execute() {
-        // Logic to deposit the amount into the account
+
         getBankDatabase().depositToAccount(getAccountNumber(), amount);
     }
 }

@@ -24,7 +24,7 @@ public class ATMScreen {
         System.out.print("Please enter your choice: ");
         while (!scanner.hasNextInt()) {
             System.out.println("Invalid input. Please enter a number.");
-            scanner.next(); // Consume the non-integer input
+            scanner.next();
             System.out.print("Please enter your choice: ");
         }
         return scanner.nextInt();
@@ -34,5 +34,5 @@ public class ATMScreen {
         return scanner.next();
     }
 
-    // Additional methods as needed for different types of inputs
+
 }

@@ -10,7 +10,7 @@ public class Withdrawal extends Transaction {
     }
 
     public void execute() {
-        // Logic to withdraw the amount from the account
+
         getBankDatabase().withdrawFromAccount(getAccountNumber(), amount);
     }
 }
