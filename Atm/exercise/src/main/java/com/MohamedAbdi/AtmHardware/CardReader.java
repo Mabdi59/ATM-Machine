@@ -1,16 +1,20 @@
 package com.MohamedAbdi.AtmHardware;
+import java.util.Scanner;
 
 public class CardReader {
 
+    private Scanner scanner;
+
+    public CardReader() {
+        this.scanner = new Scanner(System.in);
+    }
+
     public String readCard() {
-        // In a real ATM, this would interact with hardware.
-        // For simulation, you can return a fixed card number or prompt the user to enter one.
-        return "123456789"; // Example card number
+        System.out.println("Please enter your card number:");
+        return scanner.nextLine();
     }
 
     public boolean validateCard(String cardNumber) {
-        // Here, you might check if the card number matches a valid pattern or is in your database
-        return cardNumber != null && !cardNumber.isEmpty();
-        // In real-world, additional validations would be applied
+        return cardNumber != null && cardNumber.length() == 16;
     }
 }

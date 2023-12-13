@@ -9,8 +9,12 @@ public class Withdrawal extends Transaction {
         this.amount = amount;
     }
 
+    @Override
     public void execute() {
-
-        getBankDatabase().withdrawFromAccount(getAccountNumber(), amount);
+        if (getBankDatabase().withdrawFromAccount(getAccountNumber(), amount)) {
+            System.out.println("Withdrawn: $" + amount);
+        } else {
+            System.out.println("Insufficient funds or invalid transaction.");
+        }
     }
 }

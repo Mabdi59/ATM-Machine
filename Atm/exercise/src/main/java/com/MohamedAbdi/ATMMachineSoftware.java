@@ -3,7 +3,6 @@ package com.MohamedAbdi;
 import com.MohamedAbdi.Util.Configuration;
 import com.MohamedAbdi.Util.Logger;
 import com.MohamedAbdi.bank.BankDatabase;
-import com.MohamedAbdi.userinterface.ATMScreen;
 import com.MohamedAbdi.userinterface.ATMUserInterface;
 import com.MohamedAbdi.AtmHardware.CardReader;
 import com.MohamedAbdi.AtmHardware.CashDispenser;
@@ -21,25 +20,34 @@ public class ATMMachineSoftware {
     private UserAuthentication userAuth;
 
     public ATMMachineSoftware(String configFilePath) {
-        config = new Configuration("relative/path/to/config.txt");
+        // Load the configuration settings
+        config = new Configuration(configFilePath);
 
-        bankDatabase = new BankDatabase();
+        // Initialize the components of the ATM
+        bankDatabase = new BankDatabase(); // This should be set up with necessary accounts
         cardReader = new CardReader();
-        cashDispenser = new CashDispenser();
+        cashDispenser = new CashDispenser(); // Ensure this is initialized with a sufficient amount of cash
         printer = new Printer();
-        userAuth = new UserAuthentication(bankDatabase);
+        userAuth = new UserAuthentication(bankDatabase); // Ensure proper encryption of PINs in the bank database
 
+        // Set up the ATM user interface
         atmUI = new ATMUserInterface(bankDatabase, cardReader, cashDispenser, printer, userAuth);
     }
 
     public void start() {
+        // Log the start of the ATM machine
         Logger.log("ATM Machine started.");
+
+        // Run the ATM user interface
         atmUI.run();
+
+        // Log the shutdown of the ATM machine
         Logger.log("ATM Machine shut down.");
     }
 
     public static void main(String[] args) {
-        ATMMachineSoftware atmMachine = new ATMMachineSoftware("relative/path/to/config.txt");
-        atmMachine.start();
+        // Create an instance of ATMMachineSoftware with the path to the configuration file
+        ATMMachineSoftware atmMachine = new ATMMachineSoftware("path/to/config.txt");
+        atmMachine.start(); // Start the ATM machine
     }
 }

@@ -1,0 +1,1 @@
+Logger.logTransaction("Withdrawal - Account: xxxx1234, Amount: $500, Status: Successful");

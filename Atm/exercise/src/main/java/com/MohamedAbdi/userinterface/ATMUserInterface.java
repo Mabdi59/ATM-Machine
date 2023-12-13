@@ -85,6 +85,9 @@ public class ATMUserInterface {
 
         bankDatabase.depositToAccount(accountNumber, amount);
         screen.displayMessage("Your deposit of $" + amount + " has been processed.");
+
+        // Debug statement before printing receipt
+        System.out.println("Attempting to print deposit receipt...");
         printer.printReceipt("Deposit: $" + amount);
     }
 
@@ -101,7 +104,7 @@ public class ATMUserInterface {
     }
     private void handleWithdrawal(String accountNumber) {
         screen.displayMessage("Enter amount to withdraw:");
-        int amount = screen.getUserInput(); // Get the withdrawal amount
+        int amount = screen.getUserInput(); // Ensure this method returns an integer
 
         if (amount <= 0) {
             screen.displayMessage("Invalid amount. Please enter a positive number.");
@@ -111,6 +114,9 @@ public class ATMUserInterface {
         if (bankDatabase.withdrawFromAccount(accountNumber, amount)) {
             cashDispenser.dispenseCash(amount);
             screen.displayMessage("Please take your cash.");
+
+            // Debug statement before printing receipt
+            System.out.println("Attempting to print withdrawal receipt...");
             printer.printReceipt("Withdrawal: $" + amount);
         } else {
             screen.displayMessage("Insufficient funds or invalid transaction.");
@@ -119,8 +125,8 @@ public class ATMUserInterface {
 
     private String getAccountNumberFromCard(String cardNumber) {
         Map<String, String> cardToAccountMap = new HashMap<>();
-        cardToAccountMap.put("123456789", "Account01");
-        cardToAccountMap.put("987654321", "Account02");
+        cardToAccountMap.put("123456789", "123456789"); // Map card number to the same account number
+        cardToAccountMap.put("987654321", "987654321"); // Similarly for the second account
 
         return cardToAccountMap.getOrDefault(cardNumber, null);
     }

@@ -9,8 +9,9 @@ public class Deposit extends Transaction {
         this.amount = amount;
     }
 
+    @Override
     public void execute() {
-
         getBankDatabase().depositToAccount(getAccountNumber(), amount);
+        System.out.println("Deposited $" + amount + " to account " + getAccountNumber());
     }
 }

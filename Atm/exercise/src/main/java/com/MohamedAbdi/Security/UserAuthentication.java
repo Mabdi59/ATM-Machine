@@ -17,7 +17,7 @@ public class UserAuthentication {
             String encryptedStoredPin = account.getEncryptedPin();
             String encryptedInputPin = EncryptionUtil.encrypt(pin);
 
-
+            // For debugging purposes
             System.out.println("Debug: Stored Encrypted PIN: " + encryptedStoredPin);
             System.out.println("Debug: Input Encrypted PIN: " + encryptedInputPin);
 
