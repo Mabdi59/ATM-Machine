@@ -1,2 +1,14 @@
 2023-12-13 15:49:04 - ATM Machine started.
 2023-12-13 15:49:25 - ATM Machine shut down.
+2023-12-13 16:19:06 - ATM Machine started.
+2023-12-13 16:21:26 - ATM Machine shut down.
+2023-12-13 17:05:05 - ATM Machine started.
+2023-12-13 17:07:12 - ATM Machine shut down.
+2023-12-13 19:19:36 - ATM Machine started.
+2023-12-13 22:35:03 - ATM Machine started.
+2023-12-15 22:37:37 - ATM Machine started.
+2023-12-15 22:39:38 - ATM Machine shut down.
+2024-02-13 02:48:51 - ATM Machine started.
+2024-02-13 02:49:14 - ATM Machine shut down.
+2024-02-13 02:50:36 - ATM Machine started.
+2024-02-20 19:22:52 - ATM Machine started.
